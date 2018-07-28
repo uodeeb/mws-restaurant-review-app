@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-:focus{
+/*:focus{
   border: #ff0000 solid 2px;
-}
+}*/
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -59,6 +59,7 @@ nav {
 }
 nav h1 {
   margin: auto;
+  padding-top: 25px;
 }
 nav h1 a {
   color: #fff;
