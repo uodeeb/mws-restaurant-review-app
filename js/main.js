@@ -113,6 +113,7 @@ updateRestaurants = () => {
   const nIndex = nSelect.selectedIndex;
 
   const cuisine = cSelect[cIndex].value;
+
   const neighborhood = nSelect[nIndex].value;
 
   DBHelper.fetchRestaurantByCuisineAndNeighborhood(cuisine, neighborhood, (error, restaurants) => {
@@ -172,7 +173,7 @@ createRestaurantHTML = (restaurant) => {
   // add an alt to each img
   image.alt = name.textContent + " restaurant photo";
  
-  console.log(name.textContent)
+
   const neighborhood = document.createElement('p');
 
   neighborhood.innerHTML = restaurant.neighborhood;
