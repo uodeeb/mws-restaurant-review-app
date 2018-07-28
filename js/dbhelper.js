@@ -152,10 +152,11 @@ class DBHelper {
   static imageUrlForRestaurant(restaurant) {
     let tab = window.matchMedia("(min-width: 700px)")
 let smMob = window.matchMedia("(min-width: 360px)")
+
     //return (`/img/${restaurant.photograph}`);
     if (tab.matches) { // If media query matches
       return (`/img/50%-${restaurant.photograph}`);
-
+     
     } if(smMob.matches){
       return (`/img/40%-${restaurant.photograph}`);
     }

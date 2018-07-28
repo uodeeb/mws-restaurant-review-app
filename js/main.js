@@ -3,6 +3,7 @@ let restaurants,
   cuisines
 var newMap
 var markers = []
+let restName = document.getElementById('restaurant-name')
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -170,7 +171,10 @@ createRestaurantHTML = (restaurant) => {
   li.append(name);
   // add an alt to each img
   image.alt = name.textContent + " restaurant photo";
+ 
+  console.log(name.textContent)
   const neighborhood = document.createElement('p');
+
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
 
