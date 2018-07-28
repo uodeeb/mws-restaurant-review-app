@@ -213,7 +213,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 44%;
+  width: 46%;
 }
 #restaurant-name {
   color: #f18200;
@@ -281,4 +281,66 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+
+
+
+
+/*________________media query for smallMobs___________*/
+@media screen and (min-width: 360px){
+
+  .filter-options select {
+    display: grid;
+    width: 300px;
+    margin-left: 30px;
+  }
+  .filter-options {
+    height: 120px;
+    padding-top: 10px;
+  }
+  .filter-options h2{
+    margin-left: 10px; 
+  }
+
+
+}
+
+
+/*________________media query for tabs_______________*/
+@media screen and (min-width: 700px){
+  .filter-options{
+    text-align: center;
+  }
+  .filter-options select {
+    width: 400px;
+    font-size: 14pt;
+    margin-left: 180px;
+  }
+  .filter-options h2{
+    font-size: 16pt;
+  }
+  #footer{
+    font-size: 12pt;
+  }
+
+}
+/*________________media query for desktops_______________*/
+@media screen and (min-width: 1200px){
+  .filter-options{
+    height: 70px;
+  }
+  .filter-options select {
+    width: 400px;
+    font-size: 14pt;
+   display: inline;
+   margin-left: 25px;
+  }
+  .filter-options h2{
+    font-size: 16pt;
+  }
+  #footer{
+    font-size: 16pt;
+  }
+
 }

@@ -150,8 +150,24 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    let tab = window.matchMedia("(min-width: 700px)")
+let smMob = window.matchMedia("(min-width: 360px)")
+    //return (`/img/${restaurant.photograph}`);
+    if (tab.matches) { // If media query matches
+      return (`/img/50%-${restaurant.photograph}`);
+
+    } if(smMob.matches){
+      return (`/img/40%-${restaurant.photograph}`);
+    }
+    else {
+      return (`/img/${restaurant.photograph}`);
+    }
   }
+
+
+
+
+
 
   /**
    * Map marker for a restaurant.
