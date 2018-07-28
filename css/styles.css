@@ -71,21 +71,24 @@ nav h1 a {
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
-    font-size: 17px;
+    background-color:rgb(2, 29, 46);
+    font-size: 14pt;
     margin: 0;
-    width: calc(50% - 80px);
+    width: calc(100% - 80px);
+    color: #ffffff;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+    color: #ffffff;
+    font-size: 14pt;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
     padding: 8px;
-    color: black;
+    color: rgb(256, 256, 256);
     content: "/\00a0";
 }
 
@@ -302,8 +305,34 @@ nav h1 a {
   .filter-options h2{
     margin-left: 10px; 
   }
-
-
+  #map {
+    
+    width: 100%;
+    background-color: #ccc;
+  }
+  #reviews-container{
+    width: 100%;
+  }
+  .inside #footer{
+    width: 100%;
+    font-size: 18pt;
+    line-height: 3;
+    position: fixed;
+  }
+  #reviews-list li {
+    width: 95%;
+  
+  }
+   #restaurant-hours td, th{
+font-size: 16pt;
+color: #000;
+  }
+  #restaurant-address{
+    font-size: 16pt;
+  }
+  #restaurant-name {
+    font-size: 24pt;
+  }
 }
 
 
@@ -323,7 +352,9 @@ nav h1 a {
   #footer{
     font-size: 12pt;
   }
-
+  #reviews-list li p {
+    font-size: 16pt;
+  }
 }
 /*________________media query for desktops_______________*/
 @media screen and (min-width: 1200px){
@@ -342,5 +373,7 @@ nav h1 a {
   #footer{
     font-size: 16pt;
   }
-
+  #breadcrumb{
+    background-color: none;
+  }
 }
