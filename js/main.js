@@ -1,3 +1,19 @@
+/*____________________ register service worker ___________________*/
+//if (ServiceWorker in navigator){
+
+ 
+  //.then(function(registeration){
+    //console.log('this is working', registeration);
+
+  //})
+ // .catch(function(err){
+   // console.log('No, this is not really working', err)
+ // })
+//}
+
+
+
+
 let restaurants,
   neighborhoods,
   cuisines
@@ -12,6 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   initMap(); // added 
   fetchNeighborhoods();
   fetchCuisines();
+  //addServiceWorker();
 });
 
 /**
@@ -216,4 +233,9 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-
+/*____________________ add service worker function ___________________*/
+/*function addServiceWorker(){
+  navigator.serviceWorker.register('/sw.js');
+};*/
+navigator.serviceWorker
+.register('./js/sw.js');

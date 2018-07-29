@@ -366,7 +366,7 @@ color: #000;
     height: 70px;
   }
   .filter-options select {
-    width: 400px;
+    /*width: 400px;*/
     font-size: 14pt;
    display: inline;
    margin-left: 25px;
