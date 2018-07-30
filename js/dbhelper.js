@@ -195,4 +195,3 @@ let smMob = window.matchMedia("(min-width: 360px)")
   } */
 
 }
-
